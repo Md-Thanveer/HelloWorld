@@ -6,4 +6,6 @@ from .models import Category
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('name','id')
+    #search field
+    search_fields = ('name',)
 admin.site.register(Category,CategoryAdmin)
