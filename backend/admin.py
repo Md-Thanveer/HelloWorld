@@ -8,4 +8,6 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = ('name','id')
     #search field
     search_fields = ('name',)
+    #add filters for name field
+    list_filter = ('name',)
 admin.site.register(Category,CategoryAdmin)
