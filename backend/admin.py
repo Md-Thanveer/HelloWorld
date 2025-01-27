@@ -11,5 +11,5 @@ class CategoryAdmin(admin.ModelAdmin):
     #add filters for name field
     list_filter = ('name',)
     #sorting by name in ascending order
-    ordering = ['name']
+    ordering = ['-name']
 admin.site.register(Category,CategoryAdmin)
