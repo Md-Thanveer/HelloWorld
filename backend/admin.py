@@ -10,4 +10,6 @@ class CategoryAdmin(admin.ModelAdmin):
     search_fields = ('name',)
     #add filters for name field
     list_filter = ('name',)
+    #sorting by name in ascending order
+    ordering = ['name']
 admin.site.register(Category,CategoryAdmin)
